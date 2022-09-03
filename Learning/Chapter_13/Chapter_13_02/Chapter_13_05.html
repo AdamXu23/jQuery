@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter_13_05</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('tr:even').css('background-color','#FF9');
+                $('tr:odd').css('background-color','#CFF');
+                $('tr:first').css('background-color','#FCF');
+            })
+        </script>
+    </head>
+    <body>
+        <div id="divA">
+            <h2>認識jQuery</h2>
+            <p>
+                <span class="fontRed">
+                    jQuery
+                </span>
+                是目前最受歡迎的 JavaScript函式庫。
+            </p>
+            <a href="https://jquery.com/">前往jQuery官方網站</a>
+            <table width="400" border="1">
+                <tr>
+                    <td>相關網址</td>
+                </tr>
+                <tr>
+                    <td><a href="https://jquery.com/">jQuery官方網站</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://jquery.com/download/">jQuery下載</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://learn.jquery.com/">jQuery學習中心</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://blog.jquery.com/">jQuery部落格</a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
