@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter_14_09</title>
+        <style>
+            #box{
+                background-color: yellow;
+                width: 600px;
+                height: 600px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btnDown').click(function(){
+                    $('#box').slideDown(500);
+                })
+                
+                $('#btnUp').click(function(){
+                    $('#box').slideUp(500);
+                })
+                
+                $('#btnToggle').click(function(){
+                    $('#box').slideToggle(500);
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <p>
+            <input type="button" id="btnDown" value="展開">
+            <input type="button" id="btnUp" value="收起">
+            <input type="button" id="btnToggle" value="切換">
+        </p>
+        <p>&nbsp;</p>
+        <div id="box">Box</div>
+    </body>
+</html>

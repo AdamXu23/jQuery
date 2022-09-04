@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter_14_07</title>
+        <style>
+            #box{
+                background-color: yellow;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btnShow').click(function(){
+                    $('#box').show(500);
+                })
+                
+                $('#btnHide').click(function(){
+                    $('#box').hide(500);
+                })
+                
+                $('#btnToggle').click(function(){
+                    $('#box').toggle(500);
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <p>
+            <input type="button" id="btnShow" value="顯示">
+            <input type="button" id="btnHide" value="隱藏">
+            <input type="button" id="btnToggle" value="切換">
+        </p>
+        <p>&nbsp;</p>
+        <div id="box">Box</div>
+    </body>
+</html>

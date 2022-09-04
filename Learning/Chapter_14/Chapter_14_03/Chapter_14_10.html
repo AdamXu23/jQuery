@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter_14_09</title>
+        <style>
+            #box{
+                background-color: yellow;
+                width: 600px;
+                height: 600px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btnFadein').click(function(){
+                    $('#box').fadeIn(500);
+                })
+                
+                $('#btnFadeout').click(function(){
+                    $('#box').fadeOut(500);
+                })
+                $('#btnFadeto02').click(function(){
+                    $('#box').fadeTo('show',0.2);
+                })
+                $('#btnFadeto10').click(function(){
+                    $('#box').fadeTo('show',1.0);
+                })
+                $('#btnFadeToggle').click(function(){
+                    $('#box').fadeToggle('show');
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <p>
+            <input type="button" id="btnFadein" value="淡入">
+            <input type="button" id="btnFadeout" value="淡出">
+            <input type="button" id="btnFadeto02" value="透明0.2">
+            <input type="button" id="btnFadeto10" value="透明1.0">
+            <input type="button" id="btnFadeToggle" value="切換">
+        </p>
+        <p>&nbsp;</p>
+        <div id="box">Box</div>
+    </body>
+</html>
