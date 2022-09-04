@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter_14_02</title>
+        <style>
+        #box1{
+            background-color: lawngreen;
+            width: auto;
+            height: 100px;
+        }
+        #box2{
+            background-color: yellow;
+            width: auto;
+            height: 100px;
+        }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#box1').html('<h3>這是HTML文字</h3>');
+                $('#box2').text('<h3>這是存文字</h3>')
+            });
+        </script>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </body>
+</html>

@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <title>Chapter_14_02</title>
         <style>
-            .highlight{
-                background-color: #ff6;
-            }
+        .highlight{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
         </style>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
         <script>
             $(document).ready(function(){
                 alert('Change Color!');
-                $('.box').toggleClass('highlight');
-                alert('Change Color!');
-                $('.box').toggleClass('highlight');
+                $('#box').toggleClass('highlight');
             });
         </script>
     </head>
