@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Chapter_16_19_panel</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/efc0f7b16d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- 第1頁内容 -->
+        <div data-role="page" id="page">
+            <div id="panelOverlay" data-role="panel" data-position="left" data-display="overlay">
+                <h3>Overlay</h3>
+                <p><a href="#" data-role="button" data-rel="close">Close</a> </p>
+            </div>
+            <div id="panelReveal" data-role="panel" data-position="right" data-display="reveal" data-theme="b">
+                <h3>Revea</h3>
+                <p><a href="#" data-role="button" data-rel="close">Close</a> </p>
+            </div>
+            <div id="panelPush" data-role="panel" data-position="left" data-display="push">
+                <h3>Push</h3>
+                <p><a href="#" data-role="button" data-rel="close">Close</a> </p>
+            </div>
+
+
+
+
+
+
+
+
+            <div data-role="header">
+                <h1>Chapter_16_19_panel</h1>
+            </div>
+            <div data-role="content">
+                <a href="#panelOverlay" data-role="button" data-inline="true">panelOverlay</a>
+                <a href="#panelReveal" data-role="button" data-inline="true">panelReveal</a>
+                <a href="#panelPush" data-role="button" data-inline="true">panelPush</a>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+    </body>
+</html>

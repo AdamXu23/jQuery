@@ -11,21 +11,21 @@
     <body>
         <!-- 第1頁内容 -->
         <div data-role="page" id="page">
-            <div data-role="header" data-position="fixed">
-                <h1>Chapter_16_14_collapsible</h1>
+            <div data-role="header">
+                <h1>Chapter_16_16_dialog</h1>
             </div>
-            <div data-role="collapsible" data-collapsed="true">
-                <h3>關於jQuery Mobile</h3>
-                <p> 123456789<br>
-                    123456789<br>
-                    123456789<br>
-                    123456789<br>
-                    123456789<br>
-                    123456789<br>
-                    123456789</p>
+            <div data-role="content">
+                <a href="#message" data-role="button" data-transition="pop">pop</a>
+                <a href="#message" data-role="button" data-transition="slidedown">slidedown</a>
+                <a href="#message" data-role="button" data-transition="flip">flip</a>
             </div>
-        <div data-role="footer" data-position="fixed">
-            <h4>頁尾</h4>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+        <div id="message" data-role="page" data-dialog="true">
+            <div data-role="header"><h1>Message</h1></div>
+            <div data-role="content"><p>這是訊息視窗</p></div>
         </div>
     </body>
 </html>

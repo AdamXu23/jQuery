@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Chapter_16_14_collapsible</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/efc0f7b16d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- 第1頁内容 -->
+        <div data-role="page" id="page">
+            <div data-role="header">
+                <h1>Chapter_16_16_dialog</h1>
+            </div>
+            <div data-role="content">
+                <a href="#page1" data-role="button">訊息視窗1</a>
+                <a href="#page2" data-role="button">訊息視窗2</a>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+        <div id="page1" data-role="page" data-dialog="true">
+            <div data-role="header"><h1>這是視窗1</h1></div>
+            <div data-role="content"><p>你好,這是視窗1</p></div>
+        </div>
+        <div id="page2" data-role="page" data-dialog="true">
+            <div data-role="header"><h1>這是視窗2</h1></div>
+            <div data-role="content"><p>你好,這是視窗2</p></div>
+        </div>
+    </body>
+</html>
