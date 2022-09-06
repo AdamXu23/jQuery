@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Chapter_17_03_Slider</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/efc0f7b16d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <div data-role="header">
+                <h1>Chapter_17_03_Slider</h1>
+            </div>
+            <div data-role="content">
+                <form method="get" action="">
+
+                    <label for="slider-fill">slider-fill</label>
+                    <input type="range" name="slider-fill" id="slider-fill" value="60" min="0" max="1000" step="50" data-highlight="true">
+                    <label for="slider-fill-mini">slider-fill-mini</label>
+                    <input type="range" name="slider-fill-mini" id="slider-fill-mini"
+                     value="40" min="0" max="100" data-mini="true" data-highlight="true" 
+                     data-theme="b">
+                     
+
+                    <input type="submit" name="button1" id="button1" data-inline="true" value="送出">
+                    <input type="reset" name="button2" id="button2" data-inline="true" value="重置">
+                </form>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+    </body>
+</html>
