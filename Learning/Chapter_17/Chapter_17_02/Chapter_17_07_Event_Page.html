@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Chapter_17_06_getinput</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/efc0f7b16d.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).on("pagecreate",function (e) {
+                alert("頁面新增：" + e.target.id);
+            })
+            $(document).on("pageshow", function (e) {
+                    alert("顯示的是：" + e.target.id);
+            })
+            $(document).on("pagebeforeshow", function (e) {
+                    alert("即將顯示的是：" + e.target.id);
+            })
+            $(document).on("pagebeforehide", function (e) {
+                alert("即將隱藏的是：" + e.target.id);
+            })
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>Chapter_17_06_getinput</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#page2">page2</a></li>
+                    <li><a href="#page3">page3</a></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header" data-add-back-btn="true">
+                <h1>page2</h1>
+            </div>
+            <div data-role="content">
+                <p>page2</p>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="header"data-add-back-btn="true">
+                <h1>page3</h1>
+            </div>
+            <div data-role="content" >
+                <p>page3</p>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+    </body>
+</html>
