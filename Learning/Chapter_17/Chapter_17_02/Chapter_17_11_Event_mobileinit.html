@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Chapter_17_08_Event_touch</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script>
+            $(document).on("mobileinit", function () {
+                $.mobile.defaultPageTransition = "slidedown";
+                $.mobile.pageLoadErrorMessage = "哦，頁面無法載入哦~";
+                $.mobile.pageLoadErrorMessageTheme = "b";
+            })
+        </script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/efc0f7b16d.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>Chapter_17_08_Event_touch</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#page2">page2</a></li>
+                    <li><a href="123.htm">page3</a></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header" data-add-back-btn="true">
+                <h1>page2</h1>
+            </div>
+            <div data-role="content">
+                <p>page2</p>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+    </body>
+</html>
