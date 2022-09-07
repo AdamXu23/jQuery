@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Chapter_17_11_fun_changepage</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://kit.fontawesome.com/efc0f7b16d.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).one("pageinit",function () {
+                $("#getBtn").on("click",function () {
+                    $.mobile.changePage("fun_cp_get.php",{
+                        type:"post",
+                        data:{
+                            send:'get',
+                            sendval:1
+                        },
+                        transition:'slideup'
+                    })
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>page1</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="controlgroup" data-type="horizontal" style="text-align: center">
+                    <button id="getBtn">Get</button>
+                    <button id="postBtn">Post</button>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h4>頁尾</h4>
+            </div>
+        </div>
+    </body>
+</html>
