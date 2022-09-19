@@ -10,16 +10,26 @@
         <script>
             $(document).one("pageinit",function () {
                 $("#getBtn").on("click",function () {
-                    $.mobile.changePage("fun_cp_get.php",{
-                        type:"post",
+                    $.mobile.changePage("fun_cp_get copy.php",{
+                        type:"get",
                         data:{
                             send:'get',
                             sendval:1
                         },
                         transition:'slideup'
-                    })
-                })
-            })
+                    });
+                });
+                $("#postBtn").on("click", function () {
+                    $.mobile.changePage("fun_cp_get copy.php", {
+                        type: "post",
+                        data: {
+                            send: 'post',
+                            sendval: 2
+                        },
+                        transition: 'slideup'
+                    });
+                });
+            });
         </script>
     </head>
     <body>
